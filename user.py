@@ -12,6 +12,6 @@ def add_user():
     # This function should create a new user, asking for its name
     infos = prompt(user_questions)
     with open("users.csv", "a") as myfile:
-        myfile.write(f"{infos['Name']}\n")
+        myfile.write(f"{infos['Name']}")
     print("User Added !")
     return
